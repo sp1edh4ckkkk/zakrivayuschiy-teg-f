@@ -244,6 +244,19 @@
   font-size: 14px;
 }
 
+.footer__icon-dialog {
+  width: 39px;
+  height: 39px;
+  color: var(--color-main);
+  fill: var(--color-main);
+}
+
+.footer__icon-button {
+  width: 21px;
+  height: 21px;
+  color: var(--color-main);
+}
+
 .dialog {
   background-color: var(--background-color);
   border: 2px solid var(--color-main);
