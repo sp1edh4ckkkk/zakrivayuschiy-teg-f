@@ -17,7 +17,7 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  font-family: var(--font-family-default, 'PressStart2P'), fantasy;
+  font-family: var(--font-family-variation, 'Inter'), sans-serif;
   font-variation-settings: "wght" 400;
   max-width: 43.75rem;
   margin-inline: auto;
@@ -31,12 +31,12 @@
 }
 
 .header {
+  font-family: var(--font-family-default), fantasy;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: clamp(7.5rem, 7.15rem + 1.5vw, 8.5rem);
   padding-bottom: 25px;
-  min-height: 368px;
   background-color: var(--background-color);
   border: 2px solid var(--border-color);
 }
@@ -45,13 +45,17 @@
   font-size: clamp(3rem, 2.7rem + 1.5vw, 4rem);
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 25px;
+}
+
+.header__title-link {
+  outline: none;
+  text-decoration: none;
 }
 
 .header__description {
   display: block;
   font-size: 23px;
-  margin-top: 20px;
+  margin: 20px 0 25px 0;
 }
 
 .theme-menu__list {
@@ -144,7 +148,7 @@
   font-family: var(--font-family-variation);
   font-variation-settings: "wght" 700;
   font-size: 18px;
-  padding: 5px 0 5px 10px;
+  padding: 5px 10px;
 }
 
 .card__image-container {
@@ -153,6 +157,7 @@
 }
 
 .card__tag {
+  font-family: var(--font-family-default), fantasy;
   z-index: 2;
   position: absolute;
   top: 25px;
@@ -191,10 +196,10 @@
 .card__button-container {
   display: flex;
   justify-content: end;
-  gap: 4px;
 }
 
 .button {
+  font-family: var(--font-family-default), fantasy;
   position: relative;
   background-color: transparent;
   border: none;
@@ -207,6 +212,11 @@
 
 .button:focus-visible {
   box-shadow: 2px 2px 0 var(--color-main);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.button__text {
+  font-size: 14px;
 }
 
 .card__like-button {
@@ -346,5 +356,26 @@
   .card__tag {
     -webkit-text-stroke: var(--text-stroke-size);
     text-stroke: var(--text-stroke-size);
+  }
+}
+
+@media (width <= 375px) {
+  .header__description {
+    font-size: 14px;
+  }
+
+  .card__tag {
+    right: 13px;
+  }
+
+  .footer__button {
+    flex-direction: column;
+    min-width: 306px;
+    min-height: 84px;
+  }
+
+  .save-icon {
+    width: 28px;
+    height: 28px;
   }
 }

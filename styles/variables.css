@@ -1,8 +1,17 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 
 :root {
-  --font-family-default: 'PressStart2P', fantasy;
+  --font-family-default: 'PressStart2P';
   --font-family-variation: 'Inter';
   --color-main: #00cc14;
+  --border-color: #00cc14;
+  --heart-color: #f00;
+  --button-color: #000;
+  --icon-color: #00cc14;
+  --button-background: #00cc14;
+  --background-color: #000;
   --background-image-main-color: #000;
+  --background-image-color: #007f0c, #004306;
+  --text-stroke-size: none;
+  --text-opacity: 0.5;
 }
