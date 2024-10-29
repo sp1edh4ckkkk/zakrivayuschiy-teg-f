@@ -234,16 +234,6 @@
   transform: scaleX(1);
 }
 
-.button__animation:hover .button__text {
-  transition: color 0.5s ease;
-  color: var(--button-color);
-}
-
-.card__like-button .button__text {
-  position: relative;
-  z-index: 2;
-}
-
 .card__like-button:hover::after {
   width: 100%;
 }
