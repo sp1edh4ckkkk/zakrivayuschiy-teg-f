@@ -94,6 +94,8 @@
   left: 0;
   border-bottom: 2px solid var(--accent-color);
   opacity: 0.6;
+  block-size: 2px;
+  background-color: var(--color-main);
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.3s ease;
@@ -213,21 +215,6 @@
   position: relative;
   transition: color .35s;
 }
-
-/* .card__like-button::after {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background: var(--color-main);
-  transition: width .5s ease-in-out;
-}
-
-.card__like-button:hover .button__text {
-  color: #fff;
-} */
 
 .button__animation::before {
   content: "";
