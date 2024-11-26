@@ -17,16 +17,13 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  font-family: var(--font-family-variation, 'Inter'), sans-serif;
-  font-variation-settings: "wght" 400;
+  font-family: var(--font-family-variation, 'Inter');
+  font-variation-settings: "wght" 465;
   max-width: 43.75rem;
   margin-inline: auto;
   padding-block: 100px 103px;
   color: var(--color-main);
-  background-image:
-    repeating-linear-gradient(to right, var(--background-image-main-color) 0 2px, transparent 2px 4px),
-    repeating-linear-gradient(to bottom, var(--background-image-main-color) 0 2px, transparent 2px 4px),
-    repeating-linear-gradient(to bottom, var(--background-image-color));
+  background-image: var(--bg-linear);
   background-attachment: fixed;
 }
 
@@ -145,8 +142,8 @@
 }
 
 .card__title {
-  font-family: var(--font-family-variation);
-  font-variation-settings: "wght" 700;
+  font-family: var(--font-family-variation, 'Inter');
+  font-variation-settings: "wght" 785;
   font-size: 18px;
   padding: 5px 10px;
 }
@@ -189,7 +186,8 @@
 }
 
 .card__text {
-  font-family: var(--font-family-variation);
+  font-family: var(--font-family-variation, 'Inter');
+  font-variation-settings: "wght" 465;
   font-size: 18px;
 }
 
@@ -212,18 +210,32 @@
 
 .button:focus-visible {
   box-shadow: 2px 2px 0 var(--color-main);
-  transition: box-shadow 0.3s ease-in-out;
 }
 
 .button__text {
   font-size: 14px;
 }
 
+.card__icon-button {
+  padding: 0;
+  margin-right: 6px;
+}
+
+.card__icon-button:focus {
+  box-shadow: none;
+}
+
+.card__icon-button:focus-visible {
+  outline: 2px solid #000;
+  outline-offset: -2px;
+}
+
 .card__like-button {
   min-width: 130px;
+  min-height: 38px;
   border: 2px solid var(--border-color);
   position: relative;
-  transition: color .35s;
+  transition: box-shadow 0.3s ease-in-out;
 }
 
 .button__animation::before {
