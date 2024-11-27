@@ -18,7 +18,6 @@
   --background-image-main-color: #d3d3d3;
   --background-image-color: #e7e7e7, #1a1a1a;
   --text-stroke-size: .2px #fff;
-  --text-opacity: 1;
 }
 
 @media (prefers-color-scheme: light) {
@@ -36,7 +35,6 @@
     --background-image-main-color: #d3d3d3;
     --background-image-color: #e7e7e7, #1a1a1a;
     --text-stroke-size: .2px #fff;
-    --text-opacity: 1;
   }
 }
 
@@ -54,7 +52,6 @@
   --background-image-main-color: #000;
   --background-image-color: #007f0c, #004306;
   --text-stroke-size: none;
-  --text-opacity: 0.6;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -72,6 +69,5 @@
     --background-image-main-color: #000;
     --background-image-color: #007f0c, #004306;
     --text-stroke-size: none;
-    --text-opacity: 0.6;
   }
 }

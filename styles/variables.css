@@ -3,8 +3,11 @@
 :root {
   --font-family-default: 'PressStart2P', fantasy;
   --font-family-variation: 'Inter', sans-serif;
-  --font-weight-title: 785;
-  --font-weight-main: 465;
+  --font-weight-title: 700;
+  --font-weight-main: 400;
+  --bg-linear: repeating-linear-gradient(#d3d3d3, #d3d3d3 2px, transparent 2px, transparent 4px),
+               repeating-linear-gradient(90deg, #d3d3d3, #d3d3d3 2px, transparent 2px, transparent 4px),
+               linear-gradient(#e7e7e7 0.01%, #1a1a1a);
   --color-main: #00cc14;
   --border-color: #00cc14;
   --heart-color: #f00;
